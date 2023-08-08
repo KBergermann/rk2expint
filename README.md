@@ -1,10 +1,10 @@
 # rk2expint
 Rational Krylov Runge--Kutta exponential integrators
 
-This repository implements $(RK)^2$EXPINT, a technique leveraging rational Krylov subspace approximations to the matrix exponential acting on vectors for the efficient and scalable solution of large stiff systems of ordinary differential equations (ODEs) with exponential Runge--Kutta integrators. Furthermore, it contains Matlab codes reproducing the numerical experiments from the
+This repository implements (RK)$^2$EXPINT, a technique leveraging rational Krylov subspace approximations to the matrix exponential acting on vectors for the efficient and scalable solution of large stiff systems of ordinary differential equations (ODEs) with exponential Runge--Kutta integrators. Furthermore, it contains Matlab codes reproducing the numerical experiments from the
 
 **Preprint:**
-[1] K. Bergermann and M. Stoll, Adaptive rational Krylov methods for exponential Runge--Kutta integrators, arxiv preprint arXiv:2303.09482, (2023).
+[1] K. Bergermann and M. Stoll, Adaptive rational Krylov methods for exponential Runge--Kutta integrators, arxiv preprint [arXiv:2303.09482](https://arxiv.org/pdf/2303.09482.pdf), (2023).
 
 **Requirements:**
 All codes have been tested with Matlab version R2020b on Ubuntu 20.04.6 LTS. For everything to work, we depend on several (free) external software packages:
@@ -19,6 +19,7 @@ All codes have been tested with Matlab version R2020b on Ubuntu 20.04.6 LTS. For
 Please obtain these packages as indicated on the respective website and copy the obtained codes into the empty placeholder directories (and get pardiso running. You can avoid the dependence on pardiso by using the linear_system_solver='lu_Matlab' option. Our numerical experiments showed a much better performance of pardiso though).
 
 **Data:**
+
 [1, Subsections 6.3 and 6.4] present numerical experiments on networks for which network data is required. The directory 'network_data' contains some of those files, but in order to keep the size of the repository reasonable, we have excluded the larger network files of the 'loc-Brightkite', 'ny2010', and 'roadNet-PA' networks. If you want to use them, please download them in .mat format using the links below and move them into the 'network_data' directory.
 - https://sparse.tamu.edu/SNAP/loc-Brightkite
 - https://sparse.tamu.edu/DIMACS10/ny2010
@@ -60,4 +61,8 @@ Please obtain these packages as indicated on the respective website and copy the
 - [7] S. M. Cox and P. C. Matthews, Exponential time differencing for stiff systems, J. Comput. Phys., 176 (2002), pp. 430–455.
 - [8] S. Krogstad, Generalized integrating factor methods for stiff PDEs, J. Comput. Phys., 203 (2005), pp. 72–88.
 - [9] R. Weiner, Linear-implizite Runge-Kutta-Methoden und ihre Anwendung, vol. 127, Springer-Verlag, 2013.
+
+**Contact:**
+
+Kai Bergermann ([kai.bergermann@math.tu-chemnitz.de](mailto:kai.bergermann@math.tu-chemnitz.de))
 

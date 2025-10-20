@@ -4,7 +4,7 @@ Rational Krylov Runge--Kutta exponential integrators
 This repository implements (RK)$^2$EXPINT, a technique leveraging rational Krylov subspace approximations to the matrix exponential acting on vectors for the efficient and scalable solution of large stiff systems of ordinary differential equations (ODEs) with exponential Runge--Kutta integrators. Furthermore, it contains Matlab codes reproducing the numerical experiments from the
 
 **Preprint:**
-[1] K. Bergermann and M. Stoll, Adaptive rational Krylov methods for exponential Runge--Kutta integrators, arxiv preprint [arXiv:2303.09482](https://arxiv.org/pdf/2303.09482.pdf), (2023).
+[1] K. Bergermann and M. Stoll. [Adaptive rational Krylov methods for exponential Runge–Kutta integrators](https://doi.org/10.1137/23M1559439), SIAM Journal on Matrix Analysis and Applications, 45(1), p.744-770, 2024.
 
 **Requirements:**
 All codes have been tested with Matlab version R2020b on Ubuntu 20.04.6 LTS. For everything to work, we depend on several (free) external software packages:
@@ -52,7 +52,7 @@ Please obtain these packages as indicated on the respective website and copy the
  - LICENSE: GNU General Public License v2.0
 
 **References:**
-- [1] K. Bergermann and M. Stoll, Adaptive rational Krylov methods for exponential Runge--Kutta integrators, arxiv preprint arXiv:2303.09482, (2023).
+- [1] K. Bergermann and M. Stoll. Adaptive rational Krylov methods for exponential Runge–Kutta integrators, SIAM Journal on Matrix Analysis and Applications, 45(1), p.744-770, 2024.
 - [2] M. Berljafa and S. Güttel, The RKFIT algorithm for nonlinear rational approximation, SIAM J. Sci. Comput., 39 (2017), pp. A2049–A2071.
 - [3] Gaudreault, S., Rainwater, G. and Tokman, M., 2018. KIOPS: A fast adaptive Krylov subspace solver for exponential integrators. Journal of Computational Physics.
 - [4] Niesen, J. and Wright, W.M., 2011. A Krylov subspace method for option pricing. SSRN 1799124
